@@ -10,6 +10,6 @@ COPY . .
 
 RUN npm run build
 
-EXPOSE 3333
+EXPOSE 4444
 
-CMD ["npm", "run", "production"]
+CMD ["sh", "-c", "npm run migrate  && npm run production"]

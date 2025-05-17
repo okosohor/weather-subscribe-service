@@ -30,7 +30,7 @@ services:
       DB_USER: ${DB_USER}
       DB_PASSWORD: ${DB_PASSWORD}
       DB_NAME: ${DB_NAME}
-    command: npm run production
+    command: ["sh", "-c", "npm run migrate  && npm run production"]
     env_file:
       - .env
 

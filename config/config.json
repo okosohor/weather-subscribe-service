@@ -1,0 +1,18 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "weatherdb",
+    "host": "db",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "weater_user",
+    "password": "klbBZdELN4hjtR2asKVXI2uLrEk3rtpS",
+    "database": "weather_service_ail7",
+    "host": "dpg-d0k7913uibrs73998hkg-a",
+    "dialect": "postgres"
+  }
+}
+
+
