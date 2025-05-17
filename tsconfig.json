@@ -16,7 +16,9 @@
       "@models/*": ["models/*"],
       "@controllers/*": ["controllers/*"],
       "@services/*": ["services/*"],
-      "@routes/*": ["routes/*"]
+      "@routes/*": ["routes/*"],
+      "@repositories/*": ["repositories/*"],
+      "@config/*": ["config/*"]
     },
     "outDir": "./dist",
     "rootDir": "./src"

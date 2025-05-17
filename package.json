@@ -7,7 +7,7 @@
   "scripts": {
     "start": "tsx src/index.ts",
     "build": "tsc",
-    "production": "node dist/index.js",
+    "production": "node -r ts-node/register -r tsconfig-paths/register dist/index.js",
     "dev": "nodemon --watch src --exec tsx src/index.ts",
     "lint": "eslint 'src/**/*.{js,ts}'",
     "lint:fix": "eslint 'src/**/*.{js,ts}' --fix",
@@ -24,6 +24,7 @@
     "reflect-metadata": "^0.2.2",
     "sequelize": "^6.37.7",
     "sequelize-typescript": "^2.1.6",
+    "tsconfig-paths": "^4.2.0",
     "tsx": "^4.19.4",
     "winston": "^3.17.0"
   },
