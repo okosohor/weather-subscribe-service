@@ -20,7 +20,7 @@ src/
 ├── config/         # Configuration
 ├── controllers/    # Route handlers
 ├── enums/          # Enum definitions
-├── middlewares/    # Express middlewares (e.g., error handler)
+├── middlewares/    # Express middlewares
 ├── migrations/     # DB migration scripts
 ├── models/         # DB models/entities
 ├── repositories/   # DB access logic
