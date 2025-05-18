@@ -1,6 +1,6 @@
 # 🌦️ Weather Subscribe Service
 
-> 🧪 **Demo frontend**: [github-crm.vercel.app](https://weather-client-tawny.vercel.app)
+> 🧪 **Demo frontend**: [weather app](https://weather-client-tawny.vercel.app)
 
 > ⚠️ **Backend runs on a free Render server**, which:
 > - can take up to **60 seconds to wake up** on the first request
