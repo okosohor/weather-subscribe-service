@@ -17,7 +17,7 @@
 
 ```
 src/
-├── config/         # Configuration (DB, mailer, etc.)
+├── config/         # Configuration
 ├── controllers/    # Route handlers
 ├── enums/          # Enum definitions
 ├── middlewares/    # Express middlewares (e.g., error handler)
