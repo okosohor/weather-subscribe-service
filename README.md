@@ -1,12 +1,15 @@
 # 🌦️ Weather Subscribe Service
 
-This service allows users to:
-- Get current weather for a city
-- Subscribe to weather updates by email
-- Confirm subscription via token
-- Unsubscribe using token
+> 🧪 **Demo frontend**: [github-crm.vercel.app](https://github-crm.vercel.app)
 
-Built with Node.js, Express, TypeScript, PostgreSQL, and WeatherAPI.
+> ⚠️ **Backend runs on a free Render server**, which:
+> - can take up to **60 seconds to wake up** on the first request
+> - **sleeps after 15 minutes** of inactivity
+> - for testing email confirmation or daily sending, try hitting the API manually:
+>   - just before `HH:50` to trigger hourly logic
+>   - or just before `09:50` to catch daily triggers
+> 
+> ⚠️ **If testing locally**, confirmation email links will point to `http://localhost:3000` — if the client isn't running, you can **manually copy the token from the URL** and test via Postman or your browser.
 
 ---
 
@@ -86,14 +89,14 @@ services:
       db:
         condition: service_healthy
     ports:
-      - "${PORT}:3000"
+      - "${PORT}:${PORT}"
     environment:
       DB_HOST: ${DB_HOST}
       DB_PORT: ${DB_PORT}
       DB_USER: ${DB_USER}
       DB_PASSWORD: ${DB_PASSWORD}
       DB_NAME: ${DB_NAME}
-    command: ["sh", "-c", "npm run migrate && npm run production"]
+    command: ["sh", "-c", "npm run migrate  && npm run production"]
     env_file:
       - .env
 
