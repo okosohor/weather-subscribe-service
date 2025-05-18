@@ -146,7 +146,3 @@ docker-compose up --build
 - JWT is used to securely encode tokens
 
 ---
-
-## 📄 License
-
-MIT © [okosohor](https://github.com/okosohor)
