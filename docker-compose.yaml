@@ -23,7 +23,7 @@ services:
       db:
         condition: service_healthy
     ports:
-      - "${PORT}:3000"
+      - "${PORT}:4444"
     environment:
       DB_HOST: ${DB_HOST}
       DB_PORT: ${DB_PORT}
