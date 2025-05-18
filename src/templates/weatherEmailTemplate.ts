@@ -1,8 +1,11 @@
-const generateWeatherMail = (temperature: number, humidity: number, description: string, city: string): string => {
+const generateWeatherMail = (
+  temperature: number,
+  humidity: number,
+  description: string,
+): string => {
   return `
     <html>
       <body>
-        <h1>Weather Update for ${city}</h1>
         <p>Here is your weather forecast:</p>
         <ul>
           <li><strong>Temperature:</strong> ${temperature}°C</li>

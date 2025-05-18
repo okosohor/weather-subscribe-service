@@ -4,11 +4,9 @@ import { Model, DataTypes } from 'sequelize';
 class Subscription extends Model {
   public id!: number;
   public email!: string;
-  public subscription_type!: string; 
+  public frequency!: string;
   public confirmed!: boolean;
   public city!: string;
-  public createdAt!: Date;
-  public updatedAt!: Date;
 }
 
 Subscription.init(
@@ -18,7 +16,7 @@ Subscription.init(
       allowNull: false,
       unique: true,
     },
-    subscription_type: {
+    frequency: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
@@ -38,7 +36,8 @@ Subscription.init(
     sequelize,
     modelName: 'Subscription',
     tableName: 'subscriptions',
-  }
+    timestamps: false,
+  },
 );
 
 export default Subscription;

@@ -20,7 +20,8 @@
       "@repositories/*": ["repositories/*"],
       "@templates/*": ["templates/*"],
       "@config/*": ["config/*"],
-      "@enums/*": ["enums/*"]
+      "@enums/*": ["enums/*"],
+      "@utils/*": ["utils/*"]
     },
     "outDir": "./dist",
     "rootDir": "./src"
